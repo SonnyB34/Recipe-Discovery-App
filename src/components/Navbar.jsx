@@ -22,10 +22,10 @@ export default function Navbar() {
   };
   return (
     <nav className="navbar">
-        <Link to='/' className='brand'>
-         Discover Recipe
-        </Link>
-      <form className="search-form">
+      <Link to="/" className="brand">
+        Discover Recipe
+      </Link>
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
           type="text"
           value={query}
