@@ -29,7 +29,7 @@ export default function SearchPage() {
 
   return (
     <section>
-      <h1>Results for "{query}"</h1>
+      <h1>results for "{query}"</h1>
 
       {meals.length === 0 ? (
         <p>No recipes found. Try another search!</p>

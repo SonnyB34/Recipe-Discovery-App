@@ -17,7 +17,7 @@ export default function RecipePage() {
   if (error) return <ErrorMessage message={error} />;
 
   const meal = data?.meals?.[0];
-  if (!meal) return <ErrorMessage message="Recipe not found!" />;
+  if (!meal) return <ErrorMessage message="recipe not found!" />;
 
   const ingredients = [];
   for (let i = 1; i <= 20; i++) {

@@ -58,6 +58,7 @@ a {
   padding: 8px 10px;
   border: 0;
   border-radius: 8px;
+  font-size: 0.9rem;
 }
 
 .search-form button {
@@ -160,4 +161,10 @@ a {
 .error-message {
   background: #fdecea;
   padding: 16px;
+  border-radius: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 0;
 }
