@@ -67,3 +67,42 @@ a {
   background: #da983c;
   font-size: 1rem;
 }
+
+.nav-links {
+  display: flex;
+  gap: 14px;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #fffff0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s;
+}
+
+.card:hover {
+  transform: translate(-4px);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  margin: 0;
+  padding: 14px;
+  font-size: 1rem;
+}
