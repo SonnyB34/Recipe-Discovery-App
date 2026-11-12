@@ -25,9 +25,10 @@ export default function RecipePage() {
     const measure = meal[`strMeasure${i}`];
 
     if (name && name.trim()) {
-      ingredients.push(
-        `${measure ? measure.trim() : ''} ${name.trim()}`.trim(),
-      );
+      ingredients.push({
+        name: name.trim(),
+        measure: measure ? measure.trim() : '',
+      });
     }
   }
 
@@ -57,14 +58,16 @@ export default function RecipePage() {
           {meal.strCategory} • {meal.strArea}
         </p>
 
-        <button onClick={toggleFavorite} className={favorite}>
+        <button onClick={toggleFavorite} className="fav-btn">
           {favorite ? '💔 Remove from Favorites' : '❤️ Add to Favorites'}
         </button>
 
         <h2>Ingredients</h2>
         <ul>
           {ingredients.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index}>
+              {item.measure} {item.name}
+            </li>
           ))}
         </ul>
 
