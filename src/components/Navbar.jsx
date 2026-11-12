@@ -18,7 +18,7 @@ export default function Navbar() {
     if (!trimmed) return; // do nothing if the box is empty
 
     navigate(`/search?query=${encodeURIComponent(trimmed)}`);
-    setQuery('');
+    setQuery(''); // empty search box
   };
   return (
     <nav className="navbar">

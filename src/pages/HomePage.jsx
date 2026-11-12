@@ -14,7 +14,7 @@ export default function HomePage() {
   // If error show error
   if (error) return <ErrorMessage message={error} />;
 
-  const categories = data?.categories;
+  const categories = data?.categories ?? [];
 
   return (
     <section>
