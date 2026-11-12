@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="brand">
-        Discover Recipe
+        Recipe Mayhem
       </Link>
       <form className="search-form" onSubmit={handleSubmit}>
         <input
