@@ -1,16 +1,45 @@
-# React + Vite
+# Recipe Discovery
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A recipe browsing app built with **React** and **React Router**, powered by the free [TheMealDB API](https://www.themealdb.com/api.php) (no API key required). Browse recipes by category, search by name, view full recipe details, and save your favorites. Your favorites are remembered even after you close the browser.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Browse categories**: the home page shows every recipe category from the API
+- **Category pages**: see all recipes in a category (for example, `/category/Seafood`)
+- **Recipe details**: photo, ingredients with measurements, and step-by-step instructions
+- **Favorites**: add or remove a recipe from favorites with one click, and view them all on the Favorites page
+- **Persistent favorites**: favorites are saved to `localStorage`, so they survive page refreshes
+- **Search**: search for recipes by name from the Navbar (`/search?query=...`)
+- **Loading and error states**: a spinner while data loads and a friendly message if something goes wrong
+- **Empty states**: helpful messages when there are no favorites or no search results
+- **404 page** for unknown addresses
+- **Responsive design** that works on phones and desktops
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev/) (hooks and the Context API)
+- [React Router](https://reactrouter.com/) for routing
+- [Vite](https://vite.dev/) for the dev server and build tool
+- JavaScript (JSX) and plain CSS
+- [TheMealDB API](https://www.themealdb.com/api.php)
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- npm (comes with Node.js)
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone <your-repo-url>
+cd recipe-discovery
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm run dev
+```
